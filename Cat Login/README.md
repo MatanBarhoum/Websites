@@ -1,3 +1,3 @@
 # Cat Login Project
 
-<img src="Capture1.JPG">
+<img src="Capture2.JPG">
