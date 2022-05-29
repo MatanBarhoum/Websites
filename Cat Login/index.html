@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+            body {
+        background-color: rgb(255,230,230);
+        width: 100%;
+        height: 100vh;
+        color: black;
+        font-size: 16px;
+      }
+      .catphoto {
+        width: 49%;
+        height: 330px;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 0 0 20px 0 black;
+      }
+      .header {
+        width: 20%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      h1, p {
+        color: black;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+      h1 {
+        padding-top: 15px;
+      }
+      p {
+        margin-top: -10px;
+        font-size: 14px;
+      }
+      .form {
+        width: 60%;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 35px;
+      }
+      .LoginDetails {
+        width: 55%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgba(255,128,128, 0.2);
+        border-style: none;
+        border-radius: 5px;
+      }
+      .Remember-Label {
+        display: inline-block;
+        margin-top: 10px;
+      }
+      .Checkbox-Label {
+        display: block;
+        margin-top: 10px;
+      }
+      .Meowing {
+        margin-top: 20px;
+        width: 55%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgba(255,128,128, 0.2);
+        border-style: none;
+        border-radius: 5px;
+      }
+      input[type="checkbox"] {
+        vertical-align: bottom;
+      }
+      input[type="submit"] {
+        margin-top: 20px;
+        width: 10%;   
+        margin-left: 250px;
+        margin-bottom: 20px;
+      }
+      input {
+        margin-top: 10px;
+      }
+    </style>>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <title>Form Project</title>
+  </head>
+  <body>
+    <main>
+      <div class="catphoto">
+        <img src="https://images.theconversation.com/files/443350/original/file-20220131-15-1ndq1m6.jpg?ixlib=rb-1.1.0&rect=0%2C0%2C3354%2C2464&q=45&auto=format&w=926&fit=clip">
+      </div>
+      <div class="header">
+        <h1>Cat Login</h1>
+        <p>A login page for cats</p>
+      </div>
+
+      <div class="form">
+        <form>
+          <fieldset class="LoginDetails">
+            <label id="username">Username: <input type="text" ID="username" name="username" placeholder="Username" required /></label>
+            <label id="password">Password: <input type="password" pattern="[a-z0-9]{8,}" ID="password" name="password" placeholder="Password" required /></label>
+            <label class="Remember-Label"><input type="radio" name="RememberMe" ID="Remember" /> Remember me</label>
+          </fieldset>
+          <fieldset class="Meowing">
+            <label>Please choose an action: </label>
+            <label class="Checkbox-Label"><input type="checkbox" name="Meow" ID="meow" /> Meow</label>
+            <label class="Checkbox-Label"><input type="checkbox" name="Meow" ID="meow" /> Meow</label>
+            <label class="Checkbox-Label"><input type="checkbox" name="Meow" ID="meow" /> Roar</label>
+          </fieldset>
+          <input type="submit" name="submit" id="submit" value="Login">
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
