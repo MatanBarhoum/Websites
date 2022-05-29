@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Cats Photo Gallery</title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                margin: 0;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+
+            .header {
+                padding: 32px;
+                text-align: center;
+            }
+
+            #gallery {
+
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                padding: 0 4px;
+            }
+
+            #gallery img {
+                width: 25%;
+                height: 300px;
+                object-fit: cover;
+                margin-top: 8px;
+                padding: 0 4px;
+                border-radius: 10px;
+            }
+            
+            @media(max-width: 800px) {
+                #gallery img {
+                    width: 50%;
+                }
+            }
+
+            @media(max-width: 600px) {
+                #gallery img {
+                    width: 100%;
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+            <div class="header">
+                    <h1>Cats Photo Gallery</h1>
+            </div>
+            <div id="gallery">
+                <img src="https://cdn.britannica.com/91/181391-050-1DA18304/cat-toes-paw-number-paws-tiger-tabby.jpg?q=60">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Cat_November_2010-1a.jpg/1200px-Cat_November_2010-1a.jpg">
+                <img src="https://images.theconversation.com/files/443350/original/file-20220131-15-1ndq1m6.jpg?ixlib=rb-1.1.0&rect=0%2C0%2C3354%2C2464&q=45&auto=format&w=926&fit=clip">
+                <img src="https://i.natgeofe.com/n/46b07b5e-1264-42e1-ae4b-8a021226e2d0/domestic-cat_thumb_square.jpg">
+                <img src="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+                <img src="https://media.istockphoto.com/photos/cat-world-picture-id1311993425?b=1&k=20&m=1311993425&s=170667a&w=0&h=vFvrS09vrSeKH_u2XZVmjuKeFiIEjTkwr9KQdyOfqvg=">
+                <img src="https://i.guim.co.uk/img/media/26392d05302e02f7bf4eb143bb84c8097d09144b/446_167_3683_2210/master/3683.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=49ed3252c0b2ffb49cf8b508892e452d">
+                <img src="https://kerenagam.co.il/wp-content/uploads/2021/06/Thinking-of-getting-a-cat.png">
+            </div>
+    </body>
+</html>
